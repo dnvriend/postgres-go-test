@@ -19,4 +19,11 @@ Navigate to `~/go/src/github.com/dnvriend/postgres-go-test` directory and type `
 To manually build a binary, navigate to `~/go/src/github.com/dnvriend/postgres-go-test` directory
 nd type `make install`, this should create a binary in `$GOPATH/bin`.
 
+## Making requests
+The API is secured using basicAuth:
+
+```
+$ http --auth user:pass :8000/api/actors
+```
+
 Have fun!
